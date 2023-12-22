@@ -2,7 +2,9 @@ const router = require("express").Router();
 const path = require("path");
 const apiRoutes = require("./api");
 
+
 router.use("/api", apiRoutes);
+
 
 function base_path(req,res) {
   return res.json({ a: 1 });
